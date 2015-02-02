@@ -1,0 +1,6 @@
+import sys; sys.__plen = len(sys.path)
+./jedi-0.8.1-py2.7.egg
+./ipdb-0.8-py2.7.egg
+./ipython-3.0.0_b1-py2.7.egg
+./gnureadline-6.3.3-py2.7-macosx-10.9-intel.egg
+import sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)
